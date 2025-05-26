@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda de Instrumentos Musicales</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body bgcolor="#FCC6C7">
+  <header>
+    <h1> Instrumentos</h1>
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+    </ul>
+    <nav>    </nav>
+</header>
+
+<main>
+    <section id="inicio">
+      <h2>Bienvenido</h2>
+      <p>Explora guitarras, teclados, baterías y más. Todo lo que necesitas para hacer música.</p>
+    </section>
+
+    <section id="instrumentos">
+      <h2>Catálogo de Instrumentos</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Instrumento</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Guitarra Eléctrica</td>
+            <td>Guitarra de 6 cuerdas, cuerpo sólido, color negro</td>
+            <td>$399.99</td>
+            <td><button onclick="agregarAlCarrito('Guitarra Eléctrica')">Agregar al carrito</button></td>
+          </tr>
+          <tr>
+            <td>Teclado Digital</td>
+            <td>61 teclas, con metrónomo y salida MIDI</td>
+            <td>$299.99</td>
+            <td><button onclick="agregarAlCarrito('Teclado Digital')">Agregar al carrito</button></td>
+          </tr>
+          <tr>
+            <td>Batería Acústica</td>
+            <td>Set de 5 piezas con platillos incluidos</td>
+            <td>$599.99</td>
+            <td><button onclick="agregarAlCarrito('Batería Acústica')">Agregar al carrito</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <h2><img src="Ins.png" width="429" height="302" alt=""/></h2>
+  </footer>
+
+  <script>
+    function agregarAlCarrito(producto) {
+      alert(producto + " ha sido agregado al carrito.");
+    }
+  </script>
+</body>
+</html>

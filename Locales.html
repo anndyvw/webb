@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Locales de Música</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body bgcolor="#CDEDF8">
+<header>
+    <h1>Nuestros Locales</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio">
+      <h2>Descubre locales musicales cerca de ti</h2>
+      <p>Tiendas, estudios y salas de ensayo especializadas en música.</p>
+    </section>
+
+    <section id="locales">
+      <h2>Locales Destacados</h2>
+      <ul>
+        <li><strong>&quot;Las Torres&quot;</strong> - Madrid, estudio de grabación profesional.</li>
+        <li><strong>&quot;San Pancho&quot;</strong>- Barcelona, tienda de discos clásicos y raros.</li>
+        <li><strong>&quot;Centro&quot;</strong> - Valencia, sala de conciertos en vivo.</li>
+      </ul>
+    </section>
+
+    <section id="formulario">
+      <h2>Quejas aqui</h2>
+      <form action="#" method="post">
+        <label for="nombre">Nombre del Local:</label><br />
+        <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+        <label for="tipo">Tipo de Local:</label><br />
+        <select id="tipo" name="tipo" required>
+          <option value="tienda">Tienda</option>
+          <option value="estudio">Estudio</option>
+          <option value="sala">Sala de conciertos</option>
+          <option value="otro">Otro</option>
+        </select><br><br>
+
+        <label for="ubicacion">Ubicación:</label><br />
+        <input type="text" id="ubicacion" name="ubicacion" required /><br>
+
+        <label for="descripcion">Descripción:</label><br>
+        <textarea id="descripcion" name="descripcion" rows="4" required></textarea><br>
+
+        <label for="email">Email de contacto:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <button type="submit" onClick="alert(Penesito)">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer id="contacto">
+    <p>&nbsp;</p>
+  </footer>
+</body>
+</html>
+
